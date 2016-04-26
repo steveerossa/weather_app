@@ -1,0 +1,9 @@
+<div class = "panel panel-default">
+	<div class = "panel-heading">
+		<h3 class = "panel-title">{{convertToDate({dt: weatherDay.dt })| date: dateFormat}}</h3>
+	</div>
+	<div class = "panel-body">
+		<!-- DIRECTIVE SCOPE METHODS ({vars from forecast: main scope.directive object.day from json })  -->
+		Daytime Temperature: {{convertToStandard({temp: weatherDay.temp.day})}}
+	</div>
+</div>
